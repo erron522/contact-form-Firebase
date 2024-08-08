@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        form {
+            width: 400px;
+            border: none;
+            padding: 20px;
+            border-radius: 20px;
+            background-color:teal;
+        }
+        
+        
+        
+        form input.inputContent {
+            width: 85%;
+            margin: 10px 10px 15px;
+            height: 45px;
+            font-size: 15px;
+            border-radius: 20px;
+            padding: 0 20px;
+            border: none;
+        }
+        
+        input.submitBttn {
+            color: teal;
+            background-color: white;
+            border: none;
+            width: 40%;
+            height: 45px;
+            padding: 5px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            font-size: 17px;
+        }
+        
+        input.submitBttn:hover {
+            color:#9dd4db;
+        }
+        
+        form label {
+            font-size:16px;
+            color:white;
+            cursor:pointer;
+            font-family: arial;
+            margin: 10px;
+        }
+        ::placeholder {
+           color: darkgray;
+         
+        }
+        
+        h2 {
+             text-align: center;
+             color: white;
+             font-family: arial;
+             margin-bottom: 35px;
+             font-size: 18px;
+        }
+
+        .alert {
+            width: 85%;
+            background-color: #b2d8d8;
+            border-radius: 20px;
+            color: #004c4c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 0 10px;
+            display: none;
+        }
+        
+        
+    </style>
+        
+        <form action="" id="contactForm" >
+        <div class="alert">Your message sent</div>
+        <h2>Connecting HTML form to Firebase</h2>
+          
+          <input class="inputContent" type="text" id="fname" name="fname" placeholder="First Name"><br>
+          
+          <input class="inputContent" type="text" id="lname" name="lname" placeholder="Last Name"><br>
+         
+          <input class="inputContent" type="tel" id="phone" name="phone" placeholder="Phone Number"><br><br>
+
+          <input class="submitBttn" type="submit" value="Submit">
+        </form> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+        </body>
+</body>
+</html>
